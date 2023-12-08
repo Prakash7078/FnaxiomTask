@@ -6,8 +6,8 @@ import CardMain from './CardMain'
 
 function Footer() {
   return (
-    <div className='grid lg:grid-cols-2 sm:grid-cols-1 bg-blue-gray-900'>
-        <div className=' flex flex-col gap-5 p-8'>
+    <div className='grid lg:grid-cols-2 sm:grid-cols-1 '>
+        <div className=' flex flex-col gap-5 p-8 bg-blue-gray-900'>
             <DefaultTable/>
             <Table3/>
             <Table2/>
@@ -15,7 +15,7 @@ function Footer() {
               <option>select</option>
             </select>
         </div>
-        <div>
+        <div className='overflow-visible bg-blue-gray-900 '>
           <CardMain/>
         </div>
 

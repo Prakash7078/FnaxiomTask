@@ -4,18 +4,17 @@ import React from 'react'
 function CardMain() {
   return (
     <div className='bg-blue-gray-900'>
-        <div className='bg-white flex justify-between h-full m-4 rounded-md items-center'>
+        <div className='bg-white flex justify-between h-full m-8 rounded-md items-center'>
             <div className='bg-black m-7 p-3 rounded-lg'>
                 <h1>Recommende</h1>
-                <p>Hello Iam Prakash</p>
+                <p className='border-b-2'>Hello Iam Prakash</p>
                 <h1>Recommende</h1>
-                <p>Hello Iam Prakash</p>
+                <p className='border-b-2'>Hello Iam Prakash</p>
                 <h1>Recommende</h1>
-                <p>Hello Iam Prakash</p>
+                <p className='border-b-2'>Hello Iam Prakash</p>
                 <h1>Recommende</h1>
-                <p>Hello Iam Prakash</p>
-                <h1>Recommende</h1>
-                <p>Hello Iam Prakash</p>
+                <p className='border-b-2'>Hello Iam Prakash</p>
+               
                 
             </div>
             <div className='p-5'>
@@ -78,7 +77,7 @@ function CardMain() {
 
             </div>
         </div>
-        <div className='flex gap-4 justify-end items-center'>
+        <div className='flex gap-4 justify-end items-center '>
             <div className='rounded-3xl border-2 w-fit p-2 border-gray-400 text-gray-400'>
                 DEC
             </div>
