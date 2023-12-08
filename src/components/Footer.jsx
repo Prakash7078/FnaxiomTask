@@ -6,8 +6,8 @@ import CardMain from './CardMain'
 
 function Footer() {
   return (
-    <div className='grid lg:grid-cols-2 sm:grid-cols-1 '>
-        <div className=' flex flex-col gap-5 p-8 bg-blue-gray-900'>
+    <div className='grid md:grid-cols-2 sm:grid-cols-1 '>
+        <div className=' flex flex-col gap-5 md:p-8 bg-blue-gray-900 '>
             <DefaultTable/>
             <Table3/>
             <Table2/>

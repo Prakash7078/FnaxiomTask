@@ -3,15 +3,28 @@ import React from 'react'
 
 function CardMain() {
   return (
-    <div className='bg-blue-gray-900'>
-        <div className='bg-white flex justify-between h-full m-8 rounded-md items-center'>
-            <div className='bg-black m-7 p-3 rounded-lg'>
+    <div className='bg-blue-gray-900 '>
+        <div className='bg-white flex flex-col md:flex-row justify-between h-full m-7 rounded-md items-center'>
+            <div className='bg-black m-7 p-5 rounded-lg'>
                 <h1>Recommende</h1>
                 <p className='border-b-2'>Hello Iam Prakash</p>
-                <h1>Recommende</h1>
-                <p className='border-b-2'>Hello Iam Prakash</p>
-                <h1>Recommende</h1>
-                <p className='border-b-2'>Hello Iam Prakash</p>
+                <div className='flex border-b-2 gap-4 p-2'>
+                    <div className='rounded-full bg-gray-500 px-2'>4</div>
+                    <div className='rounded-full bg-gray-500 px-2'>4</div>
+                    <div className='rounded-full bg-white px-2'>4</div>
+                </div>
+                <div className='flex flex-col border-b-2 gap-2 p-2'>
+                    <div className='flex gap-4'>
+                        <div className='rounded-full bg-gray-500 px-2'>4</div>
+                        <div className='rounded-full bg-gray-500 px-2'>4</div>
+                        <div className='rounded-full bg-white px-2'>4</div>
+                    </div>
+                    <div className='flex gap-4'>
+                        <div className='rounded-full bg-gray-500 px-2'>4</div>
+                        <div className='rounded-full bg-gray-500 px-2'>4</div>
+                        <div className='rounded-full bg-white px-2'>4</div>
+                    </div>
+                </div>
                 <h1>Recommende</h1>
                 <p className='border-b-2'>Hello Iam Prakash</p>
                
@@ -77,7 +90,7 @@ function CardMain() {
 
             </div>
         </div>
-        <div className='flex gap-4 justify-end items-center '>
+        <div className='flex gap-4 justify-end items-center pr-5 '>
             <div className='rounded-3xl border-2 w-fit p-2 border-gray-400 text-gray-400'>
                 DEC
             </div>

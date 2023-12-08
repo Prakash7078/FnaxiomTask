@@ -17,7 +17,7 @@ function Brand() {
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full  " />
             </CardHeader>
             <CardBody className="">
-                <div className='relative bottom-56'>
+                <div className='relative bottom-40'>
                     <h1 className='font-serif font-bold text-4xl text-gray-200'>Fourredend</h1>
                     <p className='pt-2 text-white'>with raco testming</p>
                 </div>
@@ -25,6 +25,9 @@ function Brand() {
                    <select className='bg-blue-gray-600 px-10 py-4 text-white rounded-xl border-gray-500 border-2'>
                         <option>Abcdf</option>
                     </select>
+                </div>
+                <div className='relative border-1 bg-blue-gray-900 w-80 top-56 left-3/4 rounded-2xl  h-20'>
+                   
                 </div>
             </CardBody>
            
