@@ -1,38 +1,19 @@
-import {Card,CardHeader,CardBody,Typography} from '@material-tailwind/react';
 import nature from '../../public/nature2.jpg';
 function Brand() {
     
   return (
-    <div id="#home" className=''>
-        <Card
-            shadow={false}
-            className="relative rounded-none  h-[25rem] lg:h-[40rem] xl:h-[0rem] w-full  sm:max-w-full  justify-center overflow-hidden text-center mt-5 md:mt-0"
-            >
-            <CardHeader
-                floated={false}
-                shadow={true}
-                color="transparent"
-                className={`absolute inset-0 m-0 h-full w-full rounded-none bg-contain `}
-                style={{ backgroundImage:`url(${nature})`}}>
-                <div className="to-bg-black-10 absolute inset-0 h-full w-full  " />
-            </CardHeader>
-            <CardBody className="">
-                <div className='relative bottom-40'>
-                    <h1 className='font-serif font-bold text-4xl text-gray-200'>Fourredend</h1>
-                    <p className='pt-2 text-white'>with raco testming</p>
-                </div>
-                <div className='relative right-96 top-24'>
-                   <select className='bg-blue-gray-600 px-10 py-4 text-white rounded-xl border-gray-500 border-2'>
-                        <option>Abcdf</option>
-                    </select>
-                </div>
-                <div className='relative border-1 bg-blue-gray-900 w-80 top-56 left-3/4 rounded-2xl  h-20'>
-                   
-                </div>
-            </CardBody>
-           
-        </Card>
-       
+    <div id="#home" className='bg-contain relative' style={{"backgroundImage":`url(${nature})`}}>
+        <div className='h-screen w-full'>
+            <div className='w-fit mx-auto text-white flex flex-col items-center pt-16 gap-2'>
+                <h1 className='font-bold text-4xl'>Fourrededand</h1>
+                <p>with rago teahyung</p>
+            </div>
+            <div className='pt-64 md:pl-16 w-fit mx-auto md:mx-0'>
+                <select className='px-4 py-3 rounded-2xl bg-black text-white border-2 border-white'>
+                    <option>Ansoform</option>
+                </select>
+            </div>
+        </div>
 
     </div>
   )

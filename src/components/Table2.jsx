@@ -1,75 +1,55 @@
 import { Card, Typography } from "@material-tailwind/react";
- 
-const TABLE_HEAD = ["Name", "Job", "Employed", ""];
+import { FaGreaterThan } from "react-icons/fa";
+import { FaLessThan } from "react-icons/fa";
+
  
 const TABLE_ROWS = [
   {
     name: "John Michael",
     job: "Manager",
-    date: "23/04/18",
+    date: "managerpost",
   },
- 
+  
  
 ];
  
 function Table2() {
   return (
-    <Card className="h-fit w-3/4 mx-auto  overflow-scroll bg-blue-gray-700">
-      <table className="w-full min-w-max table-auto text-left">
+    <Card className="h-fit  mx-auto overflow-scroll bg-gray-800 text-gray-400 rounded-md">
+      <table className="w-full  min-w-max table-auto text-left ">
         <thead>
-          <tr>
-            {TABLE_HEAD.map((head) => (
-              <th
-                key={head}
-                className="border-b   bg-blue-gray-700 p-4"
-              >
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
-                >
-                  {head}
-                </Typography>
-              </th>
-            ))}
+          <tr className="text-center">
+            <td className="flex justify-between p-4 items-center font-bold">GDEXAM <FaGreaterThan /></td>
+            <td >
+              <div className="flex justify-between items-center mx-2">
+                <h1 className="font-bold">Hello</h1>
+                <FaLessThan />
+              </div>
+            </td>
+            <td >Payment</td>
           </tr>
         </thead>
         <tbody>
-          {TABLE_ROWS.map(({ name, job, date }, index) => {
-            const isLast = index === TABLE_ROWS.length - 1;
-            const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
+          {TABLE_ROWS.map(({ name, job, date }) => {
+            const classes = "px-8 py-4 border-x border-gray-900";
  
             return (
-              <tr key={name}>
+              <><tr key={name} className="">
                 <td className={classes}>
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="font-normal"
-                  >
-                    {name}
-                  </Typography>
+                  <h1 className="font-bold">{name}</h1>
+                  <p className="text-gray-500">{name}</p>
                 </td>
                 <td className={classes}>
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="font-normal"
-                  >
-                    {job}
-                  </Typography>
+                  <h1 className="font-bold">{job}</h1>
+                  <p className="text-gray-500">{job}</p>
                 </td>
                 <td className={classes}>
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="font-normal"
-                  >
-                    {date}
-                  </Typography>
+                  <h1 className="font-bold">{date}</h1>
+                  <p className="text-gray-500">{date}</p>
                 </td>
-               
+
               </tr>
+             </>
             );
           })}
         </tbody>
