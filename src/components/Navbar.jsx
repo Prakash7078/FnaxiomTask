@@ -13,7 +13,7 @@ function Navbar() {
     {name:'Pricing'},
   ]
   return (
-    <div >
+    <div className='relative'>
       <div className='flex justify-between p-5 items-center'>
         <div className='md:hidden'>
           {!menu? <LuMenu size={25} onClick={()=>setMenu(true)}/>:
@@ -31,7 +31,7 @@ function Navbar() {
           <Button color='orange'>Courses</Button>
         </div>
       </div>
-      {menu && <div className='w-full z-50 '>
+      {menu && <div className='w-full z-50 absolute bg-white '>
         <ul className='flex flex-col md:gap-6 gap-3 pl-10'>
             {data && data.map((item)=>(
               <li className='font-semibold' key={item.name}>{item.name}</li>
