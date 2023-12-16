@@ -1,5 +1,6 @@
 import React from 'react'
 import mam from '../../public/Group 167.png'
+import image from '../../public/Mask group.png';
 import { Button } from '@material-tailwind/react'
 function About() {
   return (
@@ -13,7 +14,7 @@ function About() {
                 </div>
             </div>
             <div className='flex items-center shadow-lg w-72 gap-4 p-3 '>
-                <img src={mam} className='w-10' alt='image1'/>
+                <img src={image} className='w-10' alt='image1'/>
                 <div>
                   <h1 className='font-bold'>Jenny welson</h1>
                   <p>Lewregec cgcvc cg cgcvsc gcvdcvshbsjsd</p>

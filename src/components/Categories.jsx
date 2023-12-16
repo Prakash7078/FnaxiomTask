@@ -8,22 +8,22 @@ function Categories() {
         {
             name:"Harvard University",
             address:"Cambridge, Massachusetts, UK",
-            image:"../../public/cardimage.png",
+            image:"./cardimage.png",
         },
         {
             name:"Oxford University",
             address:"Oxford, England",
-            image:"../../public/cardimage1.png",
+            image:"./cardimage1.png",
         },
         {
             name:"Standford University",
             address:"Stanford, California",
-            image:"../../public/card-image-2.png",
+            image:"./card-image-2.png",
         },
         {
             name:"Nanyang Technological University",
             address:"Nanyang Ave, Singapura",
-            image:"../../public/card-image-3.png",
+            image:"./card-image-3.png",
         },
     ]
     const [currentPage, setCurrentPage] = useState(1);

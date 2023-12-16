@@ -3,17 +3,17 @@ import React from 'react'
 function Testimonials() {
     const data=[
         {
-            image:"../../public/Group 171.png",
+            image:"./Group 171.png",
             name:"Corey Korsgaard",
             desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         },
         {
-            image:"../../public/Group 167.png",
+            image:"./public/Group 167.png",
             name:"Jakob Aminoff",
             desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         },
         {
-            image:"../../public/Mask group.png",
+            image:"./public/Mask group.png",
             name:"Carla Press",
             desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         }
