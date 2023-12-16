@@ -8,7 +8,7 @@ function Categories() {
         {
             name:"Harvard University",
             address:"Cambridge, Massachusetts, UK",
-            image:"../../public/card-image.png",
+            image:"../../public/cardimage.png",
         },
         {
             name:"Oxford University",
