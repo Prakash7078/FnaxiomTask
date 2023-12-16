@@ -8,12 +8,12 @@ function Testimonials() {
             desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         },
         {
-            image:"./public/Group 167.png",
+            image:"./Group 167.png",
             name:"Jakob Aminoff",
             desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         },
         {
-            image:"./public/Mask group.png",
+            image:"./Mask group.png",
             name:"Carla Press",
             desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         }
