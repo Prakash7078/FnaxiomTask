@@ -30,7 +30,7 @@ function About() {
            
             
         </div>
-        <div className='ml-7 flex flex-col gap-4 md:items-start items-center justify-center'>
+        <div className='ml-7 flex flex-col gap-4 md:items-start items-center justify-center lg:ml-20 '>
           <div>
             <h1 className='text-3xl font-bold'>Tropic Adventure</h1>
             <h1 className='font-thin text-2xl'>for Students</h1>

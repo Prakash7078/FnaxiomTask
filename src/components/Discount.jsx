@@ -20,7 +20,7 @@ function Discount() {
             <Button color='deep-orange' className='rounded-full mt-5'>Explore More</Button>
         </div>
         <div className='flex justify-center md:justify-start lg:justify-center w-full'>
-            <img src={image} className='lg:w-96 sm:w-80 w-2/3 h-fit ml-4 flex' alt='image'/>
+            <img src={image} className='lg:w-96 sm:w-80 w-2/3 h-fit md:ml-10 ml-4 flex' alt='image'/>
         </div>
     </div>
   )

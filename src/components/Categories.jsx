@@ -50,7 +50,7 @@ function Categories() {
                     <h1 className="font-bold text-xl ml-3">{item.name}</h1>
                     <div className="flex justify-between items-center p-3 ">
                         <p className="font-semibold">{item.address}</p>
-                        <HiOutlineDotsHorizontal/>
+                        <div className="bg-blue-gray-100 p-2 rounded-full"><HiOutlineDotsHorizontal/></div>
                     </div>
                 </div>
             ))}

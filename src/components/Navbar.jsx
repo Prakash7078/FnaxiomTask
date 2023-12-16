@@ -14,7 +14,7 @@ function Navbar() {
   ]
   return (
     <div className='relative'>
-      <div className='flex justify-between p-5 items-center'>
+      <div className='flex justify-between p-5 items-center lg:mr-24'>
         <div className='md:hidden'>
           {!menu? <LuMenu size={25} onClick={()=>setMenu(true)}/>:
           <RxCross2 size={25} onClick={()=>setMenu(false)}/>}

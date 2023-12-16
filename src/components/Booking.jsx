@@ -11,7 +11,7 @@ function Booking() {
         <img src={group} alt='book' className='sm:w-96 w-2/3'/>
       </div>
       <div className='flex items-center justify-start lg:justify-center'>
-        <form className='shadow-xl flex flex-col gap-5 p-5 w-80 my-20 mx-auto md:mx-0'>
+        <form className='shadow-xl flex flex-col gap-5 p-5 w-80 my-20 mx-auto md:mx-0 '>
           <h1 className='font-bold text-xl '>Book now</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           <div className='flex flex-col gap-2'>
