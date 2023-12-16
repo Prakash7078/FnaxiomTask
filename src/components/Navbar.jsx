@@ -1,19 +1,43 @@
-import React from 'react'
+import { Button } from '@material-tailwind/react'
+import { useState } from 'react';
+import { LuMenu } from "react-icons/lu";
+import { RxCross2 } from "react-icons/rx";
 
 function Navbar() {
+  const[menu,setMenu]=useState(false);
+  const data=[
+    {name:'Home'},
+    {name:'About'},
+    {name:'Schedules'},
+    {name:'Membership'},
+    {name:'Pricing'},
+  ]
   return (
-    <div className='flex justify-between md:px-8 py-4 items-center  bg-gray-300'>
-      <div>
-      <h1 className='text-gray-800 font-bold lg:pl-10 text-xs md:text-xl'>Huel, Weetem</h1>
+    <div >
+      <div className='flex justify-between p-5 items-center'>
+        <div className='md:hidden'>
+          {!menu? <LuMenu size={25} onClick={()=>setMenu(true)}/>:
+          <RxCross2 size={25} onClick={()=>setMenu(false)}/>}
+        </div>
+        <div className='md:flex hidden justify-center w-full'>
+          <ul className='flex md:gap-6 gap-3'>
+            {data && data.map((item)=>(
+              <li className='font-semibold' key={item.name}>{item.name}</li>
+            ))}
+          </ul>
+        </div>
+        <div className='flex items-center gap-10'>
+          <button className='px-2 sm:px-3 py-2'>Offers</button>
+          <Button color='orange'>Courses</Button>
+        </div>
       </div>
-      <div>
-        <ul className='flex text-brown-400 gap-5 text-xs md:text-lg px-5 py-2 rounded-full items-center bg-slate-500 w-fit '>
-          <li className='cursor-pointer '>Home</li>
-          <li className='cursor-pointer'>About</li>
-          <li className='cursor-pointer'>Contact</li>
-          <li className='cursor-pointer'>Address</li>
-        </ul>
-      </div>
+      {menu && <div className='w-full z-50 '>
+        <ul className='flex flex-col md:gap-6 gap-3 pl-10'>
+            {data && data.map((item)=>(
+              <li className='font-semibold' key={item.name}>{item.name}</li>
+            ))}
+          </ul>
+      </div>}
     </div>
   )
 }
