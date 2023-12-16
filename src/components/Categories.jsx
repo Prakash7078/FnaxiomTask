@@ -13,7 +13,7 @@ function Categories() {
         {
             name:"Oxford University",
             address:"Oxford, England",
-            image:"../../public/card-image-1.png",
+            image:"../../public/cardimage1.png",
         },
         {
             name:"Standford University",
