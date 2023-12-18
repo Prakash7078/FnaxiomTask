@@ -46,7 +46,7 @@ function Categories() {
           <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-8 pb-10  '>
             {currentProducts && currentProducts.map((item)=>(
                 <div key={item.id} className='w-fit flex flex-col gap-4 bg-slate-100 shadow-xl mx-auto '>
-                    <img src={item.image} className='h-fit w-full object-cover' alt='car'/>
+                    <img src={item.image} className='md:h-80 h-full w-full object-cover' alt='car'/>
                     <h1 className="font-bold text-xl ml-3">{item.name}</h1>
                     <div className="flex justify-between items-center p-3 ">
                         <p className="font-semibold">{item.address}</p>
