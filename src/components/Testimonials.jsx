@@ -26,7 +26,7 @@ function Testimonials() {
                 <div key={item.name} className='mx-auto flex flex-col items-center justify-center gap-5 w-full'>
                     <img src={item.image} alt='image' className='w-24 rounded-full object-cover'/>
                     <h1 className='border-b-2 border-green-300 pb-2'>{item.name}</h1>
-                    <p>{item.desc}</p>
+                    <p className='text-center'>{item.desc}</p>
                 </div>
             ))}
         </div>
